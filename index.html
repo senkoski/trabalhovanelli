@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login meu currículo</title>
+</head>
+<body>
+    <h1 align="center"><em>Login meu currículo</em></h1>
+    <hr width="50%" align="center">
+    
+    <form action="curriculo.html" method="get" align="center">
+        <table align="center" cellpadding="5">
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome"></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <br>
+                    <input type="submit" value="Acessar Currículo">
+                </td>
+            </tr>
+        </table>
+        
+        <table align="center" cellpadding="5">
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    <label for="termos">Aceito as diretrizes de uso</label>
+                </td>
+            </tr>
+            <tr>
+               <td><label for="curriculo">Selecione o currículo:</label></td>
+                <td>
+                    <select id="curriculo" name="curriculo" required>
+                        <option value="" disabled selected hidden>eSlecione uma opção...</option>
+                        <option value="lucas">Lucas Senkoski</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+    <p align="center">ou <a href="curriculo.html">ver diretamente</a></p>
+</body>
+</html>

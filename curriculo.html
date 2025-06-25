@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Currículo</title>
+</head>
+<body>
+    <table border="1" width="100%" cellpadding="10">
+        <tr>
+            <td rowspan="2" width="150" align="center">
+                <img src="foto.jpg" alt="Foto" width="100">
+            </td>
+            <td><h1>Lucas Senkoski</h1></td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Desenvolvedor Web | Desenvolvimento Mobile | Análise de dados | Banco de dados dba|db2</h3>
+                <p><strong>Data de Nascimento:</strong> 17/11/2008</p>
+            </td>
+        </tr>
+    </table>
+
+    <table width="100%" cellpadding="15">
+        <tr>
+            <td width="30%" valign="top">
+                <h3>Contato</h3>
+                <p>Email: Senkoskil@gmail.com<br>
+                Tel: (46) 99903-9499</p>
+                
+                <h3>Sobre Mim</h3>
+                <p>Profissional dedicado e apaixonado por tecnologia, com habilidades em desenvolvimento web, mobile e análise de dados. Busco constantemente aprender novas tecnologias e aprimorar minhas competências para entregar soluções de qualidade.</p>
+                
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>Java</li>
+                    <li>Banco de dados</li>
+                    <li>Flutter</li>
+                    <li>Python</li>
+                </ul>
+            </td>
+            
+            <td width="70%" valign="top">
+                <fieldset>
+                    <legend><b>Experiência Profissional</b></legend>
+                    <p><b>CISS S.A | Gestão para o Varejo</b> <br>
+                    Analista pós implantação</p>
+                    <p><b>Plasvin</b> <br>
+                    Estoque e Cadastro de produtos</p>
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend><b>Formação Acadêmica</b></legend>
+                    <p><b>Técnico de Desenvolvimento de Sistemas</b> (2023-2025)<br>
+                    Análise e Desenvolvimento de Sistemas</p>
+                </fieldset>
+
+                <br>
+                
+                <fieldset>
+                    <legend><b>Línguas</b></legend>
+                    <p><b>Inglês Intermediário</b></p>
+                </fieldset>
+
+                <br>
+                
+                <fieldset>
+                    <legend><b>Avaliação do Recrutador</b></legend>
+                    <form>
+                        <table cellpadding="5" width="100%">
+                            <tr>
+                                <td width="30%"><label><strong>Impressão do currículo:</strong></label></td>
+                                <td width="70%">
+                                    <input type="radio" id="gostou" name="avaliacao" value="gostou" required>
+                                    <label for="gostou">Gostei</label><br>
+                                    <input type="radio" id="nao_gostou" name="avaliacao" value="nao_gostou">
+                                    <label for="nao_gostou">Não Gostei</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="data_visualizacao"><strong>Data da Visualização:</strong></label></td>
+                                <td><input type="date" id="data_visualizacao" name="data_visualizacao" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="entrevista"><strong>Interesse:</strong></label></td>
+                                <td>
+                                    <select id="entrevista" name="entrevista" required>
+                                        <option value="" selected disabled>Selecione uma opção</option>
+                                        <option value="agendar">Quero agendar entrevista</option>
+                                        <option value="contato">Quero entrar em contato</option>
+                                        <option value="nao_interessado">Não tenho interesse</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="descricao_vaga"><strong>Descrição da Vaga:</strong></label></td>
+                                <td>
+                                    <textarea id="descricao_vaga" name="descricao_vaga" 
+                                              placeholder="Descreva aqui sobre a vaga (5-100 caracteres)"
+                                              minlength="5" maxlength="100" required></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefone_contato"><strong>Telefone para Contato:</strong></label></td>
+                                <td>
+                                    <input type="number" id="telefone_contato" name="telefone_contato" 
+                                           placeholder="(XX) XXXXX-XXXX" 
+                                           pattern="\[0-9]{2}\[0-9]{5}[0-9]{4}" 
+                                           title="Digite no formato (XX) XXXXX-XXXX com apenas números"
+                                           required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="nota_avaliacao"><strong>Nota (1-10):</strong></label></td>
+                                <td>
+                                    <input type="number" id="nota_avaliacao" name="nota_avaliacao" 
+                                           min="1" max="10" placeholder="Digite de 1 a 10"
+                                           required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <br>
+                                    <input type="submit" value="Enviar Avaliação">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
